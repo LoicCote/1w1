@@ -13,6 +13,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 h1 {
   font-size: 3rem;
@@ -30,7 +31,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #bbb;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 nav a {
@@ -39,24 +40,35 @@ nav a {
   text-decoration: none;
   padding: 4px, 3px;
 }
+
 #accueil {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: darkseagreen;
 }
+/* //////////////////////////////////////////////////////// */
 #inscription {
   background-color: darkorange;
 }
+/* //////////////////////////////////////////////////////// */
 #galerie {
   background-color: darkcyan;
 }
+/* //////////////////////////////////////////////////////// */
+#tableau {
+  background-color: #bbb;
+}
+/* //////////////////////////////////////////////////////// */
 #evenement {
   background-color: darkslateblue;
 }
+/* //////////////////////////////////////////////////////// */
 #video {
   background-color: darkred;
 }
+/* //////////////////////////////////////////////////////// */
 #footer {
   background-color: darkolivegreen;
 }
+/* //////////////////////////////////////////////////////// */
