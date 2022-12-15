@@ -1,0 +1,14 @@
+.mon_tableau {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.mon_tableau td,
+.mon_tableau th {
+  border: 1px solid black;
+  padding: 5px;
+}
+.mon_tableau th {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}

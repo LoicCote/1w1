@@ -1,80 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tp2-etape-2</title>
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/tableau.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>tp2-etape-2</title>
+		<link rel="stylesheet" href="CSS/normalize.css" />
+		<link rel="stylesheet" href="CSS/style.css" />
+		<link rel="stylesheet" href="CSS/tableau.css" />
+		<link rel="stylesheet" href="css/inscription.css" />
+		<link rel="stylesheet" href="css/video.css" />
+		<link rel="stylesheet" href="CSS/galerie.css" />
+	</head>
 
-  <body>
-    <nav>
-      <a href="#accueil">Accueil</a>
-      <a href="#inscription">Inscription</a>
-      <a href="#galerie">Galerie</a>
-      <a href="#tableau">Tableau</a>
-      <a href="#evenement">Evénement</a>
-      <a href="#video">Vidéo</a>
-      <a href="#footer">Footer</a>
-    </nav>
-    <section id="accueil">
-      <h1>TP2</h1>
-      <h2>Sujet: Fusées</h2>
-      <h3>Auteur: Loic Côté</h3>
-      <p>
-        1W1 Mise En Page Web - Techniques Intégration Multimedia - Collège de
-        Maisonneuve
+	<body>
+		<nav>
+			<a href="#accueil">Accueil</a>
+			<a href="#inscription">Inscription</a>
+			<a href="#galerie">Galerie</a>
+			<a href="#tableau">Tableau</a>
+			
+			<a href="#video">Vidéo</a>
+			<a href="#footer">Footer</a>
+		</nav>
+		<section id="accueil">
+			<h1>TP2</h1>
+			<h2>Sujet: Fusées</h2>
+			<h3>Auteur: Loic Côté</h3>
+			<p>
+				1W1 Mise En Page Web - Techniques Intégration Multimedia - Collège de
+				Maisonneuve
+			</p>
+			<p>Automne 2022</p>
+		</section>
+		<section id="inscription">
+			<h1>Inscription</h1>
+			<form class="formulaire">
+				<label for="txt_prenom">Votre prénom</label>
+				<input type="text" name="txt_prenom" id="txt_prenom" />
+				<label for="txt_nom">Votre nom</label>
+				<input type="text" name="txt_nom" id="txt_nom" />
+				<label>Courriel</label>
+				<input type="email" name="" id="txtEmail" />
+				<div class="langage">
+					<label for="html"
+						>HTML<input type="checkbox" name="" id="html" />
+					</label>
+					<label for="css">CSS<input type="checkbox" name="" id="css" /></label>
+					<label for="js">JavaScript</label>
+					<input type="checkbox" name="" id="js" />
+					<label for="php">PHP<input type="checkbox" name="" id="php" /></label>
+				</div>
+			</form>
+		</section>
+		<section id="galerie">
+			<figure>
+				<img
+					src="images/rocketAirLoin.jpg"
+					alt=""
+					width="300px"
+					height="300px"
+				/>
+				<figcaption>Lorem, ipsum.</figcaption>
+			</figure>
+			<!-- image -->
+			<figure>
+				<img
+					src="images/rocketBatimentDessous.jpg"
+					alt=""
+					width="300px"
+					height="300px"
+				/>
+				<figcaption>Lorem, ipsum.</figcaption>
+			</figure>
+			<!-- image -->
+			<figure>
+				<img src="images/RocketOrbit.jpg" alt="" width="300px" height="300px" />
+				<figcaption>Lorem, ipsum.</figcaption>
+			</figure>
+			<!-- image -->
+			<figure>
+				<img
+					src="images/rocketAirMoyen.jpg"
+					alt=""
+					width="300px"
+					height="300px"
+				/>
+				<figcaption>Lorem, ipsum.</figcaption>
+			</figure>
+			<!-- image -->
+			<figure>
+				<img
+					src="images/RocketLongueAir.jpg"
+					alt=""
+					width="300px"
+					height="300px"
+				/>
+				<figcaption>Lorem, ipsum.</figcaption>
+			</figure>
+			<!-- image -->
+			<figure>
+				<img
+					src="images/rocketBatimentMoyen.jpg"
+					alt=""
+					width="300px"
+					height="300px"
+				/>
+				<figcaption>Lorem, ipsum.</figcaption>
+			</figure>
+			<!-- image -->
+			<figure>
+				<img
+					src="images/rocketVintage2Dessous.jpg"
+					alt=""
+					width="300px"
+					height="300px"
+				/>
+				<figcaption>Lorem, ipsum.</figcaption>
+			</figure>
+			<!-- image -->
+			<figure>
+				<img
+					src="images/rocketBatimentMoyen2.jpg"
+					alt=""
+					width="300px"
+					height="300px"
+				/>
+				<figcaption>Lorem, ipsum.</figcaption>
+			</figure>
+			<!-- image -->
+		</section>
+		<section id="tableau">
+			<h1>Tableau</h1>
+			<!-- table>(tr>(td>lorem2)*3)*4 -->
+			<table class="mon_tableau">
+				<tr>
+					<!-- (th>lorem2)*3 -->
+					<th>Modeles</th>
+					<th>Poids</th>
+					<th>Grandeur</th>
+					<th>Prix</th>
+				</tr>
+				<tr>
+					<td>Falcon 9</td>
+					<td>22,800 Kg</td>
+					<td>233 ft</td>
+					<td>62M</td>
+				</tr>
+
+				<tr>
+					<td>Saturn V</td>
+					<td>140,000 Kg</td>
+					<td>363 ft</td>
+					<td>1,16B</td>
+				</tr>
+				<tr>
+					<td>BFR</td>
+					<td>250,000 Kg</td>
+					<td>348 ft</td>
+					<td>7M</td>
+				</tr>
+				<tr>
+					<td>Proton-M</td>
+					<td>23,000 Kg</td>
+					<td>191 ft</td>
+					<td>65M</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section id="video" class="youtube">
+			<h1>Vidéo</h1>
+      <div class="iframe">
+        <iframe
+          
+          width="200"
+          height="200"
+          src="https://www.youtube.com/embed/OnoNITE-CLc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/k-QdTpIp5m0" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/zsJpUCWfyPE" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/ViNcBQ8cDA0" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+		</section>
+		<section id="footer">
+			<p>Travail pratique 2 © | 1W1 - Mise En Page Web | Groupe #3</p>
+      <!-- 3 images media sociaux -->
+    <dl class="media">
+      <dt >
+          <img alt="" src="images/facebook_32.png" />
+      </dt>
+      <dt >
+          <img alt="" src="images/instagram_32.png" />
+      </dt>
+      <dt ><img alt="" src="images/youtube_32.png" /></dt>
+    </dl>
+    </div>
+      <!-- barre de recherche pied de page -->
+      <dd class="barre">
+          <form class="recherche">
+              <input placeholder="Rechercher..." type="search" />
+              <img
+                 src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=fff"
+                 width="15"
+                 height="15"/>
+          </form>
+      </dd>
+      <p class="tim">
+        TIM - techniques d'intégration multimédia - collège de Maisonneuve -
       </p>
-    </section>
-    <section id="inscription">
-      <h1>Inscription</h1>
-    </section>
-    <section id="galerie">
-      <h1>Galerie</h1>
-    </section>
-    <section id="tableau">
-      <h1>Tableau</h1>
-      <!-- table>(tr>(td>lorem2)*3)*4 -->
-      <table class="mon_tableau">
-        <tr>
-          <!-- (th>lorem2)*3 -->
-          <th>Lorem, ipsum.</th>
-          <th>Explicabo, ratione.</th>
-          <th>Neque, obcaecati.</th>
-        </tr>
-        <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Dicta, dolor!</td>
-          <td>Dolorum, eius?</td>
-        </tr>
-        <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Accusantium, quos.</td>
-          <td>Perspiciatis, eaque?</td>
-        </tr>
-        <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Voluptas, autem!</td>
-          <td>Unde, saepe!</td>
-        </tr>
-        <tr>
-          <td>Lorem, ipsum.</td>
-          <td>Enim, dolorum.</td>
-          <td>Debitis, placeat.</td>
-        </tr>
-      </table>
-    </section>
-    <section id="evenement">
-      <h1>Evénement</h1>
-    </section>
-    <section id="video">
-      <h1>Vidéo</h1>
-    </section>
-    <section id="footer">
-      <h1>Footer</h1>
-    </section>
-  </body>
+      <p class="adresse">
+        3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131
+      </p>
+		</section>
+	</body>
 </html>
